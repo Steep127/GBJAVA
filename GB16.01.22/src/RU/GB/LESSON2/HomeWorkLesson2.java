@@ -4,16 +4,17 @@ public class HomeWorkLesson2 {
     public static void main (String [] arg){
        proverka(10, 5);
        proverka2(-5);
-       proverka3(500);
-       proverka4(5, '*');
+       proverka3(-1);
+       proverka4(10, '*');
     }
-    public static void proverka(int a, int b){
-        boolean m = (a + b >= 10 && a + b <= 20 );
-        if (m == true){
-            System.out.println (m);
+    public static boolean proverka(int a, int b){
+        if (a + b >= 10 && a + b <= 20 ){
+            System.out.println ("true");
+            return true;
         }
         else{
-            System.out.println (m);
+            System.out.println ("false");
+            return false;
         }
     }
 
@@ -26,13 +27,14 @@ public class HomeWorkLesson2 {
         }
     }
 
-    public static void proverka3 (int a){
-        boolean m = (a >= 0);
-        if (m == true){
-            System.out.println(m);
+    public static boolean proverka3 (int a){
+        if (a >= 0){
+            System.out.println(false);
+            return false;
         }
         else{
-            System.out.println(m);
+            System.out.println(true);
+            return true;
         }
     }
 
