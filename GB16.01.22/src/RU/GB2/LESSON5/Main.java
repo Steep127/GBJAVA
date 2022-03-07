@@ -20,7 +20,7 @@ public class Main {
         newStroka();
 
         for (int i = 0; i < data.length; i++) {
-            for (int p = 0; p < 3; p++) {
+            for (int p = 0; p < data.length; p++) {
                 int k = data[i][p];
                 String s = Integer.toString(k);
                 byte[] l = s.getBytes(StandardCharsets.UTF_8);
