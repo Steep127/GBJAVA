@@ -12,26 +12,13 @@ public class Main {
 
 
 
-        for (int i = 0; i < header.length; i++) {
-            byte[] l = header[i].getBytes(StandardCharsets.UTF_8);
-            sendInfoStream(l);
-        }
-
+        masiveStringOne(header);
         newStroka();
-
-        for (int i = 0; i < data.length; i++) {
-            for (int p = 0; p < data.length; p++) {
-                int k = data[i][p];
-                String s = Integer.toString(k);
-                byte[] l = s.getBytes(StandardCharsets.UTF_8);
-                sendInfoStream(l);
-            }
-            newStroka();
-        }
-
+        masiveIntTwo(data);
         read("test1.csv");
-
 //        HardReset(); - для сброса содержимого в тхт
+
+
     }
 
 
@@ -71,6 +58,25 @@ public class Main {
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void masiveStringOne(String[] header_){
+        for (int i = 0; i < header_.length; i++) {
+            byte[] l = header_[i].getBytes(StandardCharsets.UTF_8);
+            sendInfoStream(l);
+        }
+    }
+
+    public static void masiveIntTwo(int[][] data_){
+        for (int i = 0; i < data_.length; i++) {
+            for (int p = 0; p < data_.length; p++) {
+                int k = data_[i][p];
+                String s = Integer.toString(k);
+                byte[] l = s.getBytes(StandardCharsets.UTF_8);
+                sendInfoStream(l);
+            }
+            newStroka();
         }
     }
 
