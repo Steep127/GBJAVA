@@ -1,0 +1,185 @@
+{
+  "id": "0efbb22c-fbce-4585-9f81-6445054d8d27",
+  "version": "2.0",
+  "name": "DZ1",
+  "url": "https://www.dns-shop.ru",
+  "tests": [{
+    "id": "7bd1615c-84e2-4d3d-8e9c-479072371b08",
+    "name": "Сценарий № 1",
+    "commands": [{
+      "id": "13b6db72-b0f0-4d1a-ad1f-ccaa49cf1263",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php?id_product=1&controller=product",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ff10dd4-2aef-432d-ae43-b816bba67d03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1017",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1666873-0b42-4378-b8fc-543f8e94e316",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "198dd75a-13d2-418f-ab4c-e97b8b238935",
+      "comment": "",
+      "command": "click",
+      "target": "css=.continue > span",
+      "targets": [
+        ["css=.continue > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d12e6995-88f8-4840-9f6b-611e3e2ec2d2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@title='View my shopping cart']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c71a264-7748-4340-aa8d-2e7a2bbed779",
+      "comment": "",
+      "command": "click",
+      "target": "css=#button_order_cart > span",
+      "targets": [
+        ["css=#button_order_cart > span", "css:finder"],
+        ["xpath=//a[@id='button_order_cart']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Check out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09c1d09f-9c2c-4420-aa3b-20e353bb806d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-trash",
+      "targets": [
+        ["css=.icon-trash", "css:finder"],
+        ["xpath=//a[@id='1_1_0_0']/i", "xpath:idRelative"],
+        ["xpath=//td[7]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4fb414d5-5b9f-4f86-9a4b-f46b76f146f6",
+    "name": "Сценарий № 2",
+    "commands": [{
+      "id": "404ebc79-1624-4227-be4b-5610aadee8c8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65576d8e-7ba7-45ef-a3ae-354e7299a18a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "712b7684-bf3c-4ef4-af9f-d6242993c1ae",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/catalog/17a890dc16404e77/smartfony-planshety-i-fototexnika/']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bb522ac-90c1-45f4-9bc8-776948ed3e01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-desktop__second-level-wrap:nth-child(2) > .ui-link:nth-child(1)",
+      "targets": [
+        ["css=.menu-desktop__second-level-wrap:nth-child(2) > .ui-link:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='homepage-desktop-menu-wrap']/div/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/17a8a01d16404e77/smartfony/')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82472a2b-2e85-41ce-bab0-85009a4de3e0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e0dd94a-8f75-4284-ae41-28b77e8379fb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ec-promo > .loaded",
+      "targets": [
+        ["css=.ec-promo > .loaded", "css:finder"],
+        ["xpath=//img[@alt='2022.04 xiaomi note 11 PRO 14.04-20.04 предзаказ']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01efbda7-8df6-4ddd-9686-e3b8bffb1b59",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.catalog-products:nth-child(2) > .catalog-product:nth-child(1) .button-ui_white",
+      "targets": [
+        ["css=.catalog-products:nth-child(2) > .catalog-product:nth-child(1) .button-ui_white", "css:finder"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc7f3b5-fe59-4f92-8e34-fc268ff7d061",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog-products:nth-child(2) > .catalog-product:nth-child(1) .button-ui_white",
+      "targets": [
+        ["css=.catalog-products:nth-child(2) > .catalog-product:nth-child(1) .button-ui_white", "css:finder"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e7e7d3d-cc92-4b7d-babf-a5329b764180",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.button-ui_action-icon-on",
+      "targets": [
+        ["css=.button-ui_action-icon-on", "css:finder"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1934568-27ab-4736-8fe0-5aa04b9e7dfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wishlist-link__lbl",
+      "targets": [
+        ["css=.wishlist-link__lbl", "css:finder"],
+        ["xpath=//nav[@id='header-search']/div/div/div[2]/a[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//a[2]/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Избранное')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f29f4a53-5c4f-4fb3-bfcd-a05f3ef16c3b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://automationpractice.com/", "http://automationpractice.com/index.php?id_product=1&controller=product", "https://vk.com/", "https://www.dns-shop.ru/"],
+  "plugins": []
+}
